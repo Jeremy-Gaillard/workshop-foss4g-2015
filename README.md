@@ -38,7 +38,26 @@ To follow this workshop, you will need to have the abovementionned elements inst
 
 You can use a VirtualBox image with all software already installed and setup, or you can choose to install them yourself. See below for installation instructions.
 
-## Installation
+## Installing with vagrant
+
+Install vagrant and virtual box:
+
+```
+sudo apt-get install virtualbox-4.3
+sudo apt-get install vagrant
+vagrant add ubuntu/trusty64 https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+```
+
+Launch the vagrant script:
+
+```
+cd vagrant
+vagrant up
+```
+
+The VM login/password are vagrant/vagrant.
+
+## Manual installation
 
 ### OS
 
@@ -110,7 +129,7 @@ Put the database dump you want to restore in data/restore. See the *data* module
 Launch the docker daemon in an other terminal:
 
 ```
-  sudo docker -d
+  sudo docker daemon
 ```
 
 Download and run the container in your Ubuntu OS:

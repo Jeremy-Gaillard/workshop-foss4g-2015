@@ -15,6 +15,7 @@ We are going to install Cesium Buildings locally and study the examples.
 ```bash
 cd data/www
 git clone https://github.com/Oslandia/cesium-buildings.git
+cd cesium-buildings
 git fetch origin workshop:workshop
 git checkout workshop
 ```

@@ -57,6 +57,12 @@ vagrant up
 
 The VM login/password are vagrant/vagrant.
 
+Once in the VM, download and launch the server docker:
+
+```
+sudo docker run -d  -p 5432:5432 -p 80:80 -v ~/data:/data --name 3dgis_test oslandia/3dgis /sbin/my_init
+```
+
 ## Manual installation
 
 ### OS

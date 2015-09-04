@@ -127,7 +127,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       "qgis.sh",
       "horao.sh",
       "citygml.sh",
-      "dockers.sh",
+  #    "dockers.sh",
   ];
   scripts.each { |script| config.vm.provision :shell, :path => script, :privileged => false }
 end

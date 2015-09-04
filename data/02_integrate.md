@@ -14,6 +14,7 @@ We will need postgis and postgis_sfcgal extensions in a newly created databse. W
 
 ```
 psql -h localhost -U pggis -c "CREATE DATABASE lyon WITH OWNER = pggis ENCODING = 'UTF8' TEMPLATE = pggis CONNECTION LIMIT = -1;" postgres
+psql -h localhost -U pggis -d lyon -c "CREATE EXTENSION POSTGIS_SFCGAL;"
 ```
 
 Import raster and vectorial data:
